@@ -69,9 +69,18 @@ header {
   transform: translate(-50% , -50%);
   font-size: 22px;
 }
-.text {
+.absolute a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.absolute a {
   display: inline;
-  margin: 0 10px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .center {
