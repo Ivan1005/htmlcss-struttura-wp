@@ -17,20 +17,20 @@ body {
   background-position: top;
 }
 
-.box{
+.box {
   width: 80vw;
   margin: 40px auto;
 }
 
 header {
   width: 100%;
-  height: 180px;
+  height: 380px;
   position: relative;
 }
 
 .immagine {
   width: 100%;
-  height: 70%;
+  height: 280px;
   border: 10px solid black;
   position: relative;
 }
@@ -54,20 +54,29 @@ header {
   font-size: 20px;
 }
 
+.albero {
+  font-size: 70px;
+  border: 0px;
+  top: calc(50% - 58px);
+}
+
+.secondo {
+  border: 0px;
+  top: 70%;
+}
+
 .menu {
   width: 100%;
-  height: 30%;
+  height: 100px;
   position: relative;
-  background-color: BurlyWood;
+  background-color:rgba(222, 184, 135,0.4);
 }
 
 .absolute {
   text-align: center;
   width: 100%;
-  position: absolute;
-  left: 50%;
-  margin: 20px auto;
-  transform: translate(-50% , -50%);
+  /* position: absolute; */
+  line-height: 100px;
   font-size: 22px;
 }
 .absolute a:hover {
@@ -75,11 +84,21 @@ header {
   color: black;
 }
 
-.absolute a {
-  display: inline;
+.absolute ul {
+  list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+}
+
+ul li {
+  display: inline-block;
+}
+
+li a {
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -91,16 +110,14 @@ header {
 
 .aside {
   width: 20%;
-  height: 480px;
-  padding: 10px;
+  padding-top: 10px;
   float: left;
 }
 
 .section {
-  height: 100%;
   font-size: 18px;
-  background-color: BurlyWood;
-  text-align: center;
+  background-color:rgba(222, 184, 135,0.4);
+  padding: 10px;
 }
 
 .section h2 {
@@ -108,68 +125,92 @@ header {
 }
 
 .scritte {
-  line-height: 40px;
+  line-height: 25px;
+  color: green;
+  padding: 10px;
+}
+
+.scritte a {
+  text-decoration: none;
   color: green;
 }
 
 main {
   width: 60%;
-  height: 480px;
   padding: 10px;
   float: left;
 }
 
 .section-main {
-  background-color: BurlyWood;
+  background-color: rgba(222, 184, 135,0.4);
   height: 100%;
-  text-align: center;
 }
 
 .section-main h2 {
   font-size: 40px;
   font-family: sans-serif;
+  margin-left: 140px;
 }
 
-.section-main .main-text{
+.section-main .main-text {
   padding: 10px;
 }
 
-.section2 {
+.aside .section2 {
 height: 100%;
 font-size: 18px;
 }
 
-.white{
-  height: 50%;
+.white {
   padding-bottom:10px;
 }
 
-.ciao{
-  background-color: BurlyWood;
+.sopra {
+  background-color: rgba(222, 184, 135,0.4);
+  width: 100%;
+  height: 100%;
+}
+
+.sopra h2 {
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.sopra p {
+  padding: 10px;
+}
+
+.sotto {
+  background-color: rgba(222, 184, 135,0.4);
   width: 100%;
   height: 100%;
   text-align: center;
-}
-
-.ciao h2 {
-  padding-right: 40px;
-}
-
-.ciao p {
-  padding: 5px;
+  padding-bottom: 10px;
 }
 
 footer {
   width: 100%;
-  height: 200px;
-  background-color: BurlyWood;
+  background-color: rgba(222, 184, 135,0.4);
 }
 
-footer h2 {
-  padding: 20px;
+footer .hr {
+  border-bottom:2px solid black;
+  width: 100%;
+  height: 15px;
+
 }
 
-footer p {
-  line-height: 20px;
-  padding: 10px;
+.footer {
+  text-align: center;
+}
+
+.icon a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer .icon {
+  display: inline-block;
+  padding: 30px 130px;
+  font-size: 30px;
 }
